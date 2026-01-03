@@ -158,6 +158,7 @@ Run both the SvelteKit dev server and Convex in parallel:
 ```sh
 # Terminal 1 - Convex backend
 pnpm convex dev
+npx convex dev
 
 # Terminal 2 - SvelteKit frontend
 pnpm dev
