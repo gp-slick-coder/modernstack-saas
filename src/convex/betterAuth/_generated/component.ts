@@ -1,6 +1,6 @@
 /* eslint-disable */
 /**
- * Generated `api` utility.
+ * Generated `ComponentApi` utility.
  *
  * THIS CODE IS AUTOMATICALLY GENERATED.
  *
@@ -8,54 +8,21 @@
  * @module
  */
 
-import type * as auth from "../auth.js";
-import type * as autumn from "../autumn.js";
-import type * as betterAuth__generated_api from "../betterAuth/_generated/api.js";
-import type * as betterAuth__generated_server from "../betterAuth/_generated/server.js";
-import type * as betterAuth_adapter from "../betterAuth/adapter.js";
-import type * as betterAuth_auth from "../betterAuth/auth.js";
-import type * as billing from "../billing.js";
-import type * as http from "../http.js";
-import type * as storage from "../storage.js";
-
-import type {
-  ApiFromModules,
-  FilterApi,
-  FunctionReference,
-} from "convex/server";
+import type { FunctionReference } from "convex/server";
 
 /**
- * A utility for referencing Convex functions in your app's API.
+ * A utility for referencing a Convex component's exposed API.
  *
+ * Useful when expecting a parameter like `components.myComponent`.
  * Usage:
- * ```js
- * const myFunctionReference = api.myModule.myFunction;
+ * ```ts
+ * async function myFunction(ctx: QueryCtx, component: ComponentApi) {
+ *   return ctx.runQuery(component.someFile.someQuery, { ...args });
+ * }
  * ```
  */
-declare const fullApi: ApiFromModules<{
-  auth: typeof auth;
-  autumn: typeof autumn;
-  "betterAuth/_generated/api": typeof betterAuth__generated_api;
-  "betterAuth/_generated/server": typeof betterAuth__generated_server;
-  "betterAuth/adapter": typeof betterAuth_adapter;
-  "betterAuth/auth": typeof betterAuth_auth;
-  billing: typeof billing;
-  http: typeof http;
-  storage: typeof storage;
-}>;
-declare const fullApiWithMounts: typeof fullApi;
-
-export declare const api: FilterApi<
-  typeof fullApiWithMounts,
-  FunctionReference<any, "public">
->;
-export declare const internal: FilterApi<
-  typeof fullApiWithMounts,
-  FunctionReference<any, "internal">
->;
-
-export declare const components: {
-  betterAuth: {
+export type ComponentApi<Name extends string | undefined = string | undefined> =
+  {
     adapter: {
       create: FunctionReference<
         "mutation",
@@ -129,7 +96,8 @@ export declare const components: {
           onCreateHandle?: string;
           select?: Array<string>;
         },
-        any
+        any,
+        Name
       >;
       deleteMany: FunctionReference<
         "mutation",
@@ -311,7 +279,8 @@ export declare const components: {
             numItems: number;
           };
         },
-        any
+        any,
+        Name
       >;
       deleteOne: FunctionReference<
         "mutation",
@@ -485,7 +454,8 @@ export declare const components: {
               };
           onDeleteHandle?: string;
         },
-        any
+        any,
+        Name
       >;
       findMany: FunctionReference<
         "query",
@@ -526,7 +496,8 @@ export declare const components: {
               | null;
           }>;
         },
-        any
+        any,
+        Name
       >;
       findOne: FunctionReference<
         "query",
@@ -557,7 +528,8 @@ export declare const components: {
               | null;
           }>;
         },
-        any
+        any,
+        Name
       >;
       updateMany: FunctionReference<
         "mutation",
@@ -788,7 +760,8 @@ export declare const components: {
             numItems: number;
           };
         },
-        any
+        any,
+        Name
       >;
       updateOne: FunctionReference<
         "mutation",
@@ -1011,9 +984,8 @@ export declare const components: {
               };
           onUpdateHandle?: string;
         },
-        any
+        any,
+        Name
       >;
     };
   };
-  autumn: {};
-};

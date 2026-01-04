@@ -10,25 +10,25 @@ importers:
     dependencies:
       '@convex-dev/better-auth':
         specifier: ^0.8.6
-        version: 0.8.6(@standard-schema/spec@1.0.0)(better-auth@1.3.8(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(convex@1.27.3(react@19.1.1))(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(typescript@5.9.2)
+        version: 0.8.9(@standard-schema/spec@1.0.0)(better-auth@1.3.8(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(convex@1.31.2(react@19.1.1))(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(typescript@5.9.2)
       '@mmailaender/convex-better-auth-svelte':
         specifier: ^0.0.6
-        version: 0.0.6(@convex-dev/better-auth@0.8.6(@standard-schema/spec@1.0.0)(better-auth@1.3.8(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(convex@1.27.3(react@19.1.1))(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(typescript@5.9.2))(better-auth@1.3.8(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(convex-svelte@0.0.11(convex@1.27.3(react@19.1.1))(svelte@5.39.6))(convex@1.27.3(react@19.1.1))(svelte@5.39.6)
+        version: 0.0.6(@convex-dev/better-auth@0.8.9(@standard-schema/spec@1.0.0)(better-auth@1.3.8(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(convex@1.31.2(react@19.1.1))(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(typescript@5.9.2))(better-auth@1.3.8(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(convex-svelte@0.0.11(convex@1.31.2(react@19.1.1))(svelte@5.39.6))(convex@1.31.2(react@19.1.1))(svelte@5.39.6)
       '@useautumn/convex':
         specifier: ^0.0.12
-        version: 0.0.12(@standard-schema/spec@1.0.0)(autumn-js@0.1.39(better-auth@1.3.8(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(better-call@1.0.16)(convex@1.27.3(react@19.1.1))(react@19.1.1))(convex@1.27.3(react@19.1.1))(react@19.1.1)(typescript@5.9.2)(zod@3.25.76)
+        version: 0.0.12(@standard-schema/spec@1.0.0)(autumn-js@0.1.39(better-auth@1.3.8(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(better-call@1.1.7(zod@3.25.76))(convex@1.31.2(react@19.1.1))(react@19.1.1))(convex@1.31.2(react@19.1.1))(react@19.1.1)(typescript@5.9.2)(zod@3.25.76)
       autumn-js:
         specifier: ^0.1.39
-        version: 0.1.39(better-auth@1.3.8(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(better-call@1.0.16)(convex@1.27.3(react@19.1.1))(react@19.1.1)
+        version: 0.1.39(better-auth@1.3.8(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(better-call@1.1.7(zod@3.25.76))(convex@1.31.2(react@19.1.1))(react@19.1.1)
       better-auth:
         specifier: 1.3.8
         version: 1.3.8(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
       convex:
         specifier: ^1.27.3
-        version: 1.27.3(react@19.1.1)
+        version: 1.31.2(react@19.1.1)
       convex-svelte:
         specifier: ^0.0.11
-        version: 0.0.11(convex@1.27.3(react@19.1.1))(svelte@5.39.6)
+        version: 0.0.11(convex@1.31.2(react@19.1.1))(svelte@5.39.6)
     devDependencies:
       '@dnd-kit-svelte/svelte':
         specifier: ^0.1.3
@@ -165,8 +165,11 @@ packages:
   '@better-auth/utils@0.2.6':
     resolution: {integrity: sha512-3y/vaL5Ox33dBwgJ6ub3OPkVqr6B5xL2kgxNHG8eHZuryLyG/4JSPGqjbdRSgjuy9kALUZYDFl+ORIAxlWMSuA==}
 
-  '@better-fetch/fetch@1.1.18':
-    resolution: {integrity: sha512-rEFOE1MYIsBmoMJtQbl32PGHHXuG2hDxvEd7rUHE0vCBoFQVSDqaVs9hkZEtHCxRoY+CljXKFCOuJ8uxqw1LcA==}
+  '@better-auth/utils@0.3.0':
+    resolution: {integrity: sha512-W+Adw6ZA6mgvnSnhOki270rwJ42t4XzSK6YWGF//BbVXL6SwCLWfyzBc1lN2m/4RM28KubdBKQ4X5VMoLRNPQw==}
+
+  '@better-fetch/fetch@1.1.21':
+    resolution: {integrity: sha512-/ImESw0sskqlVR94jB+5+Pxjf+xBwDZF/N5+y2/q4EqD7IARUTSpPfIo8uf39SYpCxyOCtbyYpUrZ3F/k0zT4A==}
 
   '@cloudflare/kv-asset-handler@0.4.0':
     resolution: {integrity: sha512-+tv3z+SPp+gqTIcImN9o0hqE9xyfQjI1XD9pL6NuKjua9B1y7mNYv0S9cP+QEbA4ppVgGZEmKOvHX5G5Ei1CVA==}
@@ -214,8 +217,8 @@ packages:
   '@cloudflare/workers-types@4.20250927.0':
     resolution: {integrity: sha512-XcFVTMNhHROLQ+AbmK6KQuis72iGCdQXrjVl2xX98ac7w3fzUiNfTsu+SKBXN9dSEjgJEhhj0EXSAXh0b8lSww==}
 
-  '@convex-dev/better-auth@0.8.6':
-    resolution: {integrity: sha512-iP2erc4YKz0HzrWSdaSRv2ck3gsdb2yBwUdSOsM0ebvNMcTsoWEBuu07cq6lUGMyJ97qxOnZDtN7CemTXKpSpA==}
+  '@convex-dev/better-auth@0.8.9':
+    resolution: {integrity: sha512-t6x2lYsgv0sGL14xmIsTqxVltkS//mWtIjb+Wm39rWUCgeqmCTqsyhQnmTDQNwaqZS0sH0WfTObNHu3xbCSx1w==}
     peerDependencies:
       better-auth: 1.3.8
       convex: ^1.26.2
@@ -1470,6 +1473,14 @@ packages:
   better-call@1.0.16:
     resolution: {integrity: sha512-42dgJ1rOtc0anOoxjXPOWuel/Z/4aeO7EJ2SiXNwvlkySSgjXhNjAjTMWa8DL1nt6EXS3jl3VKC3mPsU/lUgVA==}
 
+  better-call@1.1.7:
+    resolution: {integrity: sha512-6gaJe1bBIEgVebQu/7q9saahVzvBsGaByEnE8aDVncZEDiJO7sdNB28ot9I6iXSbR25egGmmZ6aIURXyQHRraQ==}
+    peerDependencies:
+      zod: ^4.0.0
+    peerDependenciesMeta:
+      zod:
+        optional: true
+
   bits-ui@2.11.4:
     resolution: {integrity: sha512-OlVBJhNUMDHbIAf8oDAyPchIrU8b1S5NAMm6enMZSKx5HKcf/QPI485/BL1r4EPlv4O3m45e59hBRCETtYFdxg==}
     engines: {node: '>=20'}
@@ -1601,8 +1612,8 @@ packages:
       convex: ^1.10.0
       svelte: ^5.0.0
 
-  convex@1.27.3:
-    resolution: {integrity: sha512-Ebr9lPgXkL7JO5IFr3bG+gYvHskyJjc96Fx0BBNkJUDXrR/bd9/uI4q8QszbglK75XfDu068vR0d/HK2T7tB9Q==}
+  convex@1.31.2:
+    resolution: {integrity: sha512-RFuJOwlL2bM5X63egvBI5ZZZH6wESREpAbHsLjODxzDeJuewTLKrEnbvHV/NWp1uJYpgEFJziuGHmZ0tnAmmJg==}
     engines: {node: '>=18.0.0', npm: '>=7.0.0'}
     hasBin: true
     peerDependencies:
@@ -2165,10 +2176,6 @@ packages:
   json-stable-stringify-without-jsonify@1.0.1:
     resolution: {integrity: sha512-Bdboy+l7tA3OGW6FjyFHWkP5LuByj1Tk33Ljyq0axyzdk9//JSi2u3fP1QSmd1KNwq6VOKYGlAu87CisVir6Pw==}
 
-  jwt-decode@4.0.0:
-    resolution: {integrity: sha512-+KJGIyHgkGuIq3IEBNftfhW/LfWhXUIY6OmyVWjliu5KH1y0fw7VQ8YndE2O4qZdMSd9SqbnC8GOcZEy0Om7sA==}
-    engines: {node: '>=18'}
-
   keyv@4.5.4:
     resolution: {integrity: sha512-oxVHkHR/EJf2CNXnWxRLW6mg7JyCCUcG0DtEGmL2ctUo1PNTin1PUil+r/+4r5MpVgC/fn1kjsx7mjSujKqIpw==}
 
@@ -2618,6 +2625,9 @@ packages:
   rou3@0.6.3:
     resolution: {integrity: sha512-1HSG1ENTj7Kkm5muMnXuzzfdDOf7CFnbSYFA+H3Fp/rB9lOCxCPgy1jlZxTKyFoC5jJay8Mmc+VbPLYRjzYLrA==}
 
+  rou3@0.7.12:
+    resolution: {integrity: sha512-iFE4hLDuloSWcD7mjdCDhx2bKcIsYbtOTpfH5MHHLSKMOUyjqQXTeZVa289uuwEGEKFoE/BAPbhaU4B774nceg==}
+
   run-applescript@7.1.0:
     resolution: {integrity: sha512-DPe5pVFaAsinSaV6QjQ6gdiedWDcRCbUuiQfQa2wmWV7+xC9bGulGI8+TdRmoFkAPaBXk8CrAbnlY2ISniJ47Q==}
     engines: {node: '>=18'}
@@ -2667,6 +2677,11 @@ packages:
 
   semver@7.7.2:
     resolution: {integrity: sha512-RF0Fw+rO5AMf9MAyaRXI4AV0Ulj5lMHqVxxdSgiVbixSCXoEmmX/jk0CuJw4+3SqroYO9VoUh+HcuJivvtJemA==}
+    engines: {node: '>=10'}
+    hasBin: true
+
+  semver@7.7.3:
+    resolution: {integrity: sha512-SdsKMrI9TdgjdweUSR9MweHA4EJ8YxHn8DFaDisvhVlUOe4BF1tLD7GAj0lIqWVl+dPb/rExr0Btby5loQm20Q==}
     engines: {node: '>=10'}
     hasBin: true
 
@@ -3052,13 +3067,19 @@ packages:
   zod@4.1.11:
     resolution: {integrity: sha512-WPsqwxITS2tzx1bzhIKsEs19ABD5vmCVa4xBo2tq/SrV4RNZtfws1EnCWQXM6yh8bD08a1idvkB5MZSBiZsjwg==}
 
+  zod@4.3.5:
+    resolution: {integrity: sha512-k7Nwx6vuWx1IJ9Bjuf4Zt1PEllcwe7cls3VNzm4CQ1/hgtFUK2bRNG3rvnpPUhFjmqJKAKtjV576KnUkHocg/g==}
+
 snapshots:
 
   '@better-auth/utils@0.2.6':
     dependencies:
       uncrypto: 0.1.3
 
-  '@better-fetch/fetch@1.1.18': {}
+  '@better-auth/utils@0.3.0':
+    optional: true
+
+  '@better-fetch/fetch@1.1.21': {}
 
   '@cloudflare/kv-asset-handler@0.4.0':
     dependencies:
@@ -3087,13 +3108,13 @@ snapshots:
 
   '@cloudflare/workers-types@4.20250927.0': {}
 
-  '@convex-dev/better-auth@0.8.6(@standard-schema/spec@1.0.0)(better-auth@1.3.8(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(convex@1.27.3(react@19.1.1))(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(typescript@5.9.2)':
+  '@convex-dev/better-auth@0.8.9(@standard-schema/spec@1.0.0)(better-auth@1.3.8(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(convex@1.31.2(react@19.1.1))(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(typescript@5.9.2)':
     dependencies:
-      '@better-fetch/fetch': 1.1.18
+      '@better-fetch/fetch': 1.1.21
       better-auth: 1.3.8(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
       common-tags: 1.8.2
-      convex: 1.27.3(react@19.1.1)
-      convex-helpers: 0.1.104(@standard-schema/spec@1.0.0)(convex@1.27.3(react@19.1.1))(react@19.1.1)(typescript@5.9.2)(zod@3.25.76)
+      convex: 1.31.2(react@19.1.1)
+      convex-helpers: 0.1.104(@standard-schema/spec@1.0.0)(convex@1.31.2(react@19.1.1))(react@19.1.1)(typescript@5.9.2)(zod@3.25.76)
       is-network-error: 1.3.0
       react: 19.1.1
       react-dom: 19.1.1(react@19.1.1)
@@ -3656,12 +3677,12 @@ snapshots:
     dependencies:
       svelte: 5.39.6
 
-  '@mmailaender/convex-better-auth-svelte@0.0.6(@convex-dev/better-auth@0.8.6(@standard-schema/spec@1.0.0)(better-auth@1.3.8(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(convex@1.27.3(react@19.1.1))(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(typescript@5.9.2))(better-auth@1.3.8(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(convex-svelte@0.0.11(convex@1.27.3(react@19.1.1))(svelte@5.39.6))(convex@1.27.3(react@19.1.1))(svelte@5.39.6)':
+  '@mmailaender/convex-better-auth-svelte@0.0.6(@convex-dev/better-auth@0.8.9(@standard-schema/spec@1.0.0)(better-auth@1.3.8(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(convex@1.31.2(react@19.1.1))(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(typescript@5.9.2))(better-auth@1.3.8(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(convex-svelte@0.0.11(convex@1.31.2(react@19.1.1))(svelte@5.39.6))(convex@1.31.2(react@19.1.1))(svelte@5.39.6)':
     dependencies:
-      '@convex-dev/better-auth': 0.8.6(@standard-schema/spec@1.0.0)(better-auth@1.3.8(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(convex@1.27.3(react@19.1.1))(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(typescript@5.9.2)
+      '@convex-dev/better-auth': 0.8.9(@standard-schema/spec@1.0.0)(better-auth@1.3.8(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(convex@1.31.2(react@19.1.1))(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(typescript@5.9.2)
       better-auth: 1.3.8(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
-      convex: 1.27.3(react@19.1.1)
-      convex-svelte: 0.0.11(convex@1.27.3(react@19.1.1))(svelte@5.39.6)
+      convex: 1.31.2(react@19.1.1)
+      convex-svelte: 0.0.11(convex@1.31.2(react@19.1.1))(svelte@5.39.6)
       is-network-error: 1.3.0
       svelte: 5.39.6
 
@@ -4129,11 +4150,11 @@ snapshots:
       '@typescript-eslint/types': 8.44.1
       eslint-visitor-keys: 4.2.1
 
-  '@useautumn/convex@0.0.12(@standard-schema/spec@1.0.0)(autumn-js@0.1.39(better-auth@1.3.8(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(better-call@1.0.16)(convex@1.27.3(react@19.1.1))(react@19.1.1))(convex@1.27.3(react@19.1.1))(react@19.1.1)(typescript@5.9.2)(zod@3.25.76)':
+  '@useautumn/convex@0.0.12(@standard-schema/spec@1.0.0)(autumn-js@0.1.39(better-auth@1.3.8(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(better-call@1.1.7(zod@3.25.76))(convex@1.31.2(react@19.1.1))(react@19.1.1))(convex@1.31.2(react@19.1.1))(react@19.1.1)(typescript@5.9.2)(zod@3.25.76)':
     dependencies:
-      autumn-js: 0.1.39(better-auth@1.3.8(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(better-call@1.0.16)(convex@1.27.3(react@19.1.1))(react@19.1.1)
-      convex: 1.27.3(react@19.1.1)
-      convex-helpers: 0.1.104(@standard-schema/spec@1.0.0)(convex@1.27.3(react@19.1.1))(react@19.1.1)(typescript@5.9.2)(zod@3.25.76)
+      autumn-js: 0.1.39(better-auth@1.3.8(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(better-call@1.1.7(zod@3.25.76))(convex@1.31.2(react@19.1.1))(react@19.1.1)
+      convex: 1.31.2(react@19.1.1)
+      convex-helpers: 0.1.104(@standard-schema/spec@1.0.0)(convex@1.31.2(react@19.1.1))(react@19.1.1)(typescript@5.9.2)(zod@3.25.76)
       react: 19.1.1
     transitivePeerDependencies:
       - '@standard-schema/spec'
@@ -4202,16 +4223,16 @@ snapshots:
       - '@types/node'
       - debug
 
-  autumn-js@0.1.39(better-auth@1.3.8(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(better-call@1.0.16)(convex@1.27.3(react@19.1.1))(react@19.1.1):
+  autumn-js@0.1.39(better-auth@1.3.8(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(better-call@1.1.7(zod@3.25.76))(convex@1.31.2(react@19.1.1))(react@19.1.1):
     dependencies:
-      convex: 1.27.3(react@19.1.1)
+      convex: 1.31.2(react@19.1.1)
       query-string: 9.3.1
       rou3: 0.6.3
       swr: 2.3.6(react@19.1.1)
       zod: 4.1.11
     optionalDependencies:
       better-auth: 1.3.8(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
-      better-call: 1.0.16
+      better-call: 1.1.7(zod@3.25.76)
       react: 19.1.1
 
   axios@1.12.2:
@@ -4229,7 +4250,7 @@ snapshots:
   better-auth@1.3.8(react-dom@19.1.1(react@19.1.1))(react@19.1.1):
     dependencies:
       '@better-auth/utils': 0.2.6
-      '@better-fetch/fetch': 1.1.18
+      '@better-fetch/fetch': 1.1.21
       '@noble/ciphers': 0.6.0
       '@noble/hashes': 1.8.0
       '@simplewebauthn/browser': 13.2.0
@@ -4239,17 +4260,27 @@ snapshots:
       jose: 5.10.0
       kysely: 0.28.7
       nanostores: 0.11.4
-      zod: 4.1.11
+      zod: 4.3.5
     optionalDependencies:
       react: 19.1.1
       react-dom: 19.1.1(react@19.1.1)
 
   better-call@1.0.16:
     dependencies:
-      '@better-fetch/fetch': 1.1.18
+      '@better-fetch/fetch': 1.1.21
       rou3: 0.5.1
       set-cookie-parser: 2.7.1
       uncrypto: 0.1.3
+
+  better-call@1.1.7(zod@3.25.76):
+    dependencies:
+      '@better-auth/utils': 0.3.0
+      '@better-fetch/fetch': 1.1.21
+      rou3: 0.7.12
+      set-cookie-parser: 2.7.1
+    optionalDependencies:
+      zod: 3.25.76
+    optional: true
 
   bits-ui@2.11.4(@internationalized/date@3.9.0)(svelte@5.39.6):
     dependencies:
@@ -4346,24 +4377,23 @@ snapshots:
 
   concat-map@0.0.1: {}
 
-  convex-helpers@0.1.104(@standard-schema/spec@1.0.0)(convex@1.27.3(react@19.1.1))(react@19.1.1)(typescript@5.9.2)(zod@3.25.76):
+  convex-helpers@0.1.104(@standard-schema/spec@1.0.0)(convex@1.31.2(react@19.1.1))(react@19.1.1)(typescript@5.9.2)(zod@3.25.76):
     dependencies:
-      convex: 1.27.3(react@19.1.1)
+      convex: 1.31.2(react@19.1.1)
     optionalDependencies:
       '@standard-schema/spec': 1.0.0
       react: 19.1.1
       typescript: 5.9.2
       zod: 3.25.76
 
-  convex-svelte@0.0.11(convex@1.27.3(react@19.1.1))(svelte@5.39.6):
+  convex-svelte@0.0.11(convex@1.31.2(react@19.1.1))(svelte@5.39.6):
     dependencies:
-      convex: 1.27.3(react@19.1.1)
+      convex: 1.31.2(react@19.1.1)
       svelte: 5.39.6
 
-  convex@1.27.3(react@19.1.1):
+  convex@1.31.2(react@19.1.1):
     dependencies:
       esbuild: 0.25.4
-      jwt-decode: 4.0.0
       prettier: 3.6.2
     optionalDependencies:
       react: 19.1.1
@@ -4912,8 +4942,6 @@ snapshots:
 
   json-stable-stringify-without-jsonify@1.0.1: {}
 
-  jwt-decode@4.0.0: {}
-
   keyv@4.5.4:
     dependencies:
       json-buffer: 3.0.1
@@ -5294,6 +5322,9 @@ snapshots:
 
   rou3@0.6.3: {}
 
+  rou3@0.7.12:
+    optional: true
+
   run-applescript@7.1.0: {}
 
   run-async@4.0.6: {}
@@ -5338,13 +5369,15 @@ snapshots:
 
   semver@7.7.2: {}
 
+  semver@7.7.3: {}
+
   set-cookie-parser@2.7.1: {}
 
   sharp@0.33.5:
     dependencies:
       color: 4.2.3
       detect-libc: 2.1.1
-      semver: 7.7.2
+      semver: 7.7.3
     optionalDependencies:
       '@img/sharp-darwin-arm64': 0.33.5
       '@img/sharp-darwin-x64': 0.33.5
@@ -5706,3 +5739,5 @@ snapshots:
   zod@3.25.76: {}
 
   zod@4.1.11: {}
+
+  zod@4.3.5: {}
