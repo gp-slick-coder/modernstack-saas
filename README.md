@@ -218,7 +218,7 @@ pnpm convex deploy
 
 ```sh
 # Update SITE_URL to your production domain
-npx convex env set SITE_URL https://yourdomain.com
+npx convex env set SITE_URL http://localhost:5174
 
 # Set other Convex env vars if not already set
 npx convex env set BETTER_AUTH_SECRET=$(openssl rand -base64 32)

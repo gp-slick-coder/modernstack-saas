@@ -7,8 +7,6 @@ import { betterAuth } from 'better-auth';
 import { admin } from 'better-auth/plugins';
 import authSchema from './betterAuth/schema';
 
-const siteUrl = process.env.SITE_URL!;
-
 // The component client has methods needed for integrating Convex with Better Auth,
 // as well as helper methods for general use.
 export const authComponent = createClient<DataModel, typeof authSchema>(components.betterAuth, {
@@ -22,13 +20,13 @@ export const createAuth = (
 	{ optionsOnly } = { optionsOnly: false }
 ) => {
 	return betterAuth({
-		trustedOrigins: ['http://localhost:5173'],
+		trustedOrigins: [process.env.SITE_URL!],
 		// disable logging when createAuth is called just to generate options.
 		// this is not required, but there's a lot of noise in logs without it.
 		logger: {
 			disabled: optionsOnly
 		},
-		baseURL: siteUrl,
+		baseURL: process.env.SITE_URL,
 		database: authComponent.adapter(ctx),
 		// User configuration
 		user: {
