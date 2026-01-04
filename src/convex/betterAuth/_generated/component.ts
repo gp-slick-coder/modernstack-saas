@@ -120,7 +120,7 @@ export type ComponentApi<Name extends string | undefined = string | undefined> =
                     | "banned"
                     | "banReason"
                     | "banExpires"
-                    | "_id";
+                    | "id";
                   operator?:
                     | "lt"
                     | "lte"
@@ -128,7 +128,6 @@ export type ComponentApi<Name extends string | undefined = string | undefined> =
                     | "gte"
                     | "eq"
                     | "in"
-                    | "not_in"
                     | "ne"
                     | "contains"
                     | "starts_with"
@@ -155,7 +154,7 @@ export type ComponentApi<Name extends string | undefined = string | undefined> =
                     | "userAgent"
                     | "userId"
                     | "impersonatedBy"
-                    | "_id";
+                    | "id";
                   operator?:
                     | "lt"
                     | "lte"
@@ -163,7 +162,6 @@ export type ComponentApi<Name extends string | undefined = string | undefined> =
                     | "gte"
                     | "eq"
                     | "in"
-                    | "not_in"
                     | "ne"
                     | "contains"
                     | "starts_with"
@@ -194,7 +192,7 @@ export type ComponentApi<Name extends string | undefined = string | undefined> =
                     | "password"
                     | "createdAt"
                     | "updatedAt"
-                    | "_id";
+                    | "id";
                   operator?:
                     | "lt"
                     | "lte"
@@ -202,7 +200,6 @@ export type ComponentApi<Name extends string | undefined = string | undefined> =
                     | "gte"
                     | "eq"
                     | "in"
-                    | "not_in"
                     | "ne"
                     | "contains"
                     | "starts_with"
@@ -226,7 +223,7 @@ export type ComponentApi<Name extends string | undefined = string | undefined> =
                     | "expiresAt"
                     | "createdAt"
                     | "updatedAt"
-                    | "_id";
+                    | "id";
                   operator?:
                     | "lt"
                     | "lte"
@@ -234,7 +231,6 @@ export type ComponentApi<Name extends string | undefined = string | undefined> =
                     | "gte"
                     | "eq"
                     | "in"
-                    | "not_in"
                     | "ne"
                     | "contains"
                     | "starts_with"
@@ -252,7 +248,7 @@ export type ComponentApi<Name extends string | undefined = string | undefined> =
                 model: "jwks";
                 where?: Array<{
                   connector?: "AND" | "OR";
-                  field: "publicKey" | "privateKey" | "createdAt" | "_id";
+                  field: "publicKey" | "privateKey" | "createdAt" | "id";
                   operator?:
                     | "lt"
                     | "lte"
@@ -260,7 +256,6 @@ export type ComponentApi<Name extends string | undefined = string | undefined> =
                     | "gte"
                     | "eq"
                     | "in"
-                    | "not_in"
                     | "ne"
                     | "contains"
                     | "starts_with"
@@ -308,7 +303,7 @@ export type ComponentApi<Name extends string | undefined = string | undefined> =
                     | "banned"
                     | "banReason"
                     | "banExpires"
-                    | "_id";
+                    | "id";
                   operator?:
                     | "lt"
                     | "lte"
@@ -316,7 +311,6 @@ export type ComponentApi<Name extends string | undefined = string | undefined> =
                     | "gte"
                     | "eq"
                     | "in"
-                    | "not_in"
                     | "ne"
                     | "contains"
                     | "starts_with"
@@ -343,7 +337,7 @@ export type ComponentApi<Name extends string | undefined = string | undefined> =
                     | "userAgent"
                     | "userId"
                     | "impersonatedBy"
-                    | "_id";
+                    | "id";
                   operator?:
                     | "lt"
                     | "lte"
@@ -351,7 +345,6 @@ export type ComponentApi<Name extends string | undefined = string | undefined> =
                     | "gte"
                     | "eq"
                     | "in"
-                    | "not_in"
                     | "ne"
                     | "contains"
                     | "starts_with"
@@ -382,7 +375,7 @@ export type ComponentApi<Name extends string | undefined = string | undefined> =
                     | "password"
                     | "createdAt"
                     | "updatedAt"
-                    | "_id";
+                    | "id";
                   operator?:
                     | "lt"
                     | "lte"
@@ -390,7 +383,6 @@ export type ComponentApi<Name extends string | undefined = string | undefined> =
                     | "gte"
                     | "eq"
                     | "in"
-                    | "not_in"
                     | "ne"
                     | "contains"
                     | "starts_with"
@@ -414,7 +406,7 @@ export type ComponentApi<Name extends string | undefined = string | undefined> =
                     | "expiresAt"
                     | "createdAt"
                     | "updatedAt"
-                    | "_id";
+                    | "id";
                   operator?:
                     | "lt"
                     | "lte"
@@ -422,7 +414,6 @@ export type ComponentApi<Name extends string | undefined = string | undefined> =
                     | "gte"
                     | "eq"
                     | "in"
-                    | "not_in"
                     | "ne"
                     | "contains"
                     | "starts_with"
@@ -440,7 +431,7 @@ export type ComponentApi<Name extends string | undefined = string | undefined> =
                 model: "jwks";
                 where?: Array<{
                   connector?: "AND" | "OR";
-                  field: "publicKey" | "privateKey" | "createdAt" | "_id";
+                  field: "publicKey" | "privateKey" | "createdAt" | "id";
                   operator?:
                     | "lt"
                     | "lte"
@@ -448,7 +439,6 @@ export type ComponentApi<Name extends string | undefined = string | undefined> =
                     | "gte"
                     | "eq"
                     | "in"
-                    | "not_in"
                     | "ne"
                     | "contains"
                     | "starts_with"
@@ -493,7 +483,6 @@ export type ComponentApi<Name extends string | undefined = string | undefined> =
               | "gte"
               | "eq"
               | "in"
-              | "not_in"
               | "ne"
               | "contains"
               | "starts_with"
@@ -526,7 +515,6 @@ export type ComponentApi<Name extends string | undefined = string | undefined> =
               | "gte"
               | "eq"
               | "in"
-              | "not_in"
               | "ne"
               | "contains"
               | "starts_with"
@@ -577,7 +565,7 @@ export type ComponentApi<Name extends string | undefined = string | undefined> =
                     | "banned"
                     | "banReason"
                     | "banExpires"
-                    | "_id";
+                    | "id";
                   operator?:
                     | "lt"
                     | "lte"
@@ -585,7 +573,6 @@ export type ComponentApi<Name extends string | undefined = string | undefined> =
                     | "gte"
                     | "eq"
                     | "in"
-                    | "not_in"
                     | "ne"
                     | "contains"
                     | "starts_with"
@@ -622,7 +609,7 @@ export type ComponentApi<Name extends string | undefined = string | undefined> =
                     | "userAgent"
                     | "userId"
                     | "impersonatedBy"
-                    | "_id";
+                    | "id";
                   operator?:
                     | "lt"
                     | "lte"
@@ -630,7 +617,6 @@ export type ComponentApi<Name extends string | undefined = string | undefined> =
                     | "gte"
                     | "eq"
                     | "in"
-                    | "not_in"
                     | "ne"
                     | "contains"
                     | "starts_with"
@@ -675,7 +661,7 @@ export type ComponentApi<Name extends string | undefined = string | undefined> =
                     | "password"
                     | "createdAt"
                     | "updatedAt"
-                    | "_id";
+                    | "id";
                   operator?:
                     | "lt"
                     | "lte"
@@ -683,7 +669,6 @@ export type ComponentApi<Name extends string | undefined = string | undefined> =
                     | "gte"
                     | "eq"
                     | "in"
-                    | "not_in"
                     | "ne"
                     | "contains"
                     | "starts_with"
@@ -714,7 +699,7 @@ export type ComponentApi<Name extends string | undefined = string | undefined> =
                     | "expiresAt"
                     | "createdAt"
                     | "updatedAt"
-                    | "_id";
+                    | "id";
                   operator?:
                     | "lt"
                     | "lte"
@@ -722,7 +707,6 @@ export type ComponentApi<Name extends string | undefined = string | undefined> =
                     | "gte"
                     | "eq"
                     | "in"
-                    | "not_in"
                     | "ne"
                     | "contains"
                     | "starts_with"
@@ -745,7 +729,7 @@ export type ComponentApi<Name extends string | undefined = string | undefined> =
                 };
                 where?: Array<{
                   connector?: "AND" | "OR";
-                  field: "publicKey" | "privateKey" | "createdAt" | "_id";
+                  field: "publicKey" | "privateKey" | "createdAt" | "id";
                   operator?:
                     | "lt"
                     | "lte"
@@ -753,7 +737,6 @@ export type ComponentApi<Name extends string | undefined = string | undefined> =
                     | "gte"
                     | "eq"
                     | "in"
-                    | "not_in"
                     | "ne"
                     | "contains"
                     | "starts_with"
@@ -814,7 +797,7 @@ export type ComponentApi<Name extends string | undefined = string | undefined> =
                     | "banned"
                     | "banReason"
                     | "banExpires"
-                    | "_id";
+                    | "id";
                   operator?:
                     | "lt"
                     | "lte"
@@ -822,7 +805,6 @@ export type ComponentApi<Name extends string | undefined = string | undefined> =
                     | "gte"
                     | "eq"
                     | "in"
-                    | "not_in"
                     | "ne"
                     | "contains"
                     | "starts_with"
@@ -859,7 +841,7 @@ export type ComponentApi<Name extends string | undefined = string | undefined> =
                     | "userAgent"
                     | "userId"
                     | "impersonatedBy"
-                    | "_id";
+                    | "id";
                   operator?:
                     | "lt"
                     | "lte"
@@ -867,7 +849,6 @@ export type ComponentApi<Name extends string | undefined = string | undefined> =
                     | "gte"
                     | "eq"
                     | "in"
-                    | "not_in"
                     | "ne"
                     | "contains"
                     | "starts_with"
@@ -912,7 +893,7 @@ export type ComponentApi<Name extends string | undefined = string | undefined> =
                     | "password"
                     | "createdAt"
                     | "updatedAt"
-                    | "_id";
+                    | "id";
                   operator?:
                     | "lt"
                     | "lte"
@@ -920,7 +901,6 @@ export type ComponentApi<Name extends string | undefined = string | undefined> =
                     | "gte"
                     | "eq"
                     | "in"
-                    | "not_in"
                     | "ne"
                     | "contains"
                     | "starts_with"
@@ -951,7 +931,7 @@ export type ComponentApi<Name extends string | undefined = string | undefined> =
                     | "expiresAt"
                     | "createdAt"
                     | "updatedAt"
-                    | "_id";
+                    | "id";
                   operator?:
                     | "lt"
                     | "lte"
@@ -959,7 +939,6 @@ export type ComponentApi<Name extends string | undefined = string | undefined> =
                     | "gte"
                     | "eq"
                     | "in"
-                    | "not_in"
                     | "ne"
                     | "contains"
                     | "starts_with"
@@ -982,7 +961,7 @@ export type ComponentApi<Name extends string | undefined = string | undefined> =
                 };
                 where?: Array<{
                   connector?: "AND" | "OR";
-                  field: "publicKey" | "privateKey" | "createdAt" | "_id";
+                  field: "publicKey" | "privateKey" | "createdAt" | "id";
                   operator?:
                     | "lt"
                     | "lte"
@@ -990,7 +969,6 @@ export type ComponentApi<Name extends string | undefined = string | undefined> =
                     | "gte"
                     | "eq"
                     | "in"
-                    | "not_in"
                     | "ne"
                     | "contains"
                     | "starts_with"
